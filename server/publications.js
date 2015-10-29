@@ -8,7 +8,7 @@ Meteor.publish('posts', function() {
 Meteor.methods({
   addPosts: function (postName, url) {
     Posts.insert({
-      name: postName,
+      title: postName,
       url: url
     })
   }
